@@ -134,7 +134,7 @@ var activities = [
 ["9", "", "",                         "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0",  "1"],// TODO(Sam): upload videos
 ["9", "",                   "",                                "", "", "0",  "1"],
-["3", "02/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "118", "3"], // TODO(sam): upload sheet
+["3", "02/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "118", "5"], // TODO(sam): upload sheet
 ["19", "", "Sample exam questions",                         "", "", "74", "2"],
 ["9", "",                   "",                                "", "", "0", "1"],
 ["9", "",                   "",                                "", "", "0", "1"],
@@ -143,7 +143,7 @@ var activities = [
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
-["3",  "09/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                    "", "", "0", "0"],
+["3",  "09/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                    "", "", "123", "4"],
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
@@ -284,6 +284,12 @@ var files = [
 [  "120", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/code08.hs", "Code Eight"],
 [  "121", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer08.pdf", "Sheet Eight - Example Solutions"],
 [  "122", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer08Dyslexic.pdf", "Sheet Eight - Example Solutions (Dyslexic Friendly)"],
+[  "123", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/MonadLawsChecker.hs", "MonadLawsChecker.hs"],
+[  "124", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet0.pdf", "Sheet Nine"],
+[  "125", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet09Dyslexic.pdf", "Sheet Nine (Dyslexic Friendly)"],
+[  "126", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/code09.hs", "Code Nine"],
+[  "127", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09.pdf", "Sheet Nine - Example Solutions"],
+[  "128", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09Dyslexic.pdf", "Sheet Nine - Example Solutions (Dyslexic Friendly)"],
 
 
 
