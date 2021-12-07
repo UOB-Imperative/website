@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 10;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 11;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -41,6 +41,8 @@ var categories = [
 ["19", "Sample Exam questions",             "#CCCFFF","0","",    "Materials",     ],
 ["20", "Formative Sheet",       "#EEEEDD","1","",    "Materials",     ],
 ["21", "History",       "#EEEEDD","0","",    "Materials",     ],
+["22", "Lecture",            "#CCCFFF","0","Slides",    "Code",     ],
+["23", "Lecture",            "#CCCFFF","0","",    "",     ],
 ];
 
 var activities = [
@@ -108,7 +110,7 @@ var activities = [
 ["3", "11/11/21 (Remembrance Day)<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                  "", "", "56", "5"],
 ["9", "",                   "",                            "", "", "0",  "1"],
 ["18", "view before Tue","Trees","https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d", "", "107",  "3"],
-["13", "in your own time",  "",                            "", "", "66", "3"],
+["13", "in your own time",  "",                            "", "", "66", "4"],
 ["20", "(optional)",        "Monoids",                     "", "", "70", "6"],
 //WEEK 08
 ["9", "", "",                         "", "", "0", "0"],
@@ -125,25 +127,25 @@ var activities = [
 ["9", "", "",                         "", "", "0", "0"],
 ["18", "watch before Tue","Functors","https://web.microsoftstream.com/video/73561218-e307-44d2-9b2e-dbffed287f9d", "", "116",  "1"],
 ["18", "watch before Tue","Applicatives","https://web.microsoftstream.com/video/d613cc29-e391-401f-af4c-ad6c5c86d541", "", "116",  "2"],
-["3", "25/11/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "85", "3"], // TODO(James): upload sheet
+["3", "25/11/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "85", "3"],
 ["9", "",                   "",                                "", "", "0",  "1"],
 ["9", "",                   "",                                "", "", "0",  "1"],
 ["9", "",                   "",                                "", "", "0",  "1"],
 ["20", "(optional)",        "Data.Map and Tries",              "", "", "90", "3"],
 //WEEK 10
 ["9", "", "",                         "", "", "0", "0"],
-["9", "",                   "",                                "", "", "0",  "1"],// TODO(Sam): upload videos
+["22", "watch before Tue","Monads","https://web.microsoftstream.com/video/728e6fb3-907d-4bc1-8259-77386009a481", "https://quizizz.com/join/lesson/61a1077bf56186001dc1301e/start", "125",  "1"],
+["22", "watch before Tue",   "Embedding Part I", "https://web.microsoftstream.com/video/9acfe070-bfcb-4743-8479-1e305b16cb6c", "https://docs.google.com/presentation/d/10wf-nPV-66mhulP8Bb_1ElC--qIldsTeWfrpXqT4rWA/edit?usp=sharing", "123",  "1"],
+["3", "02/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "118", "5"],
 ["9", "",                   "",                                "", "", "0",  "1"],
-["3", "02/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                     "", "", "118", "5"], // TODO(sam): upload sheet
-["19", "", "Sample exam questions",                         "", "", "74", "2"],
 ["9", "",                   "",                                "", "", "0", "1"],
 ["9", "",                   "",                                "", "", "0", "1"],
 ["17", "(optional)",        "Simplify",                  "", "", "95", "4"],
 //WEEK 11
 ["9",  "",                   "",                            "", "", "0", "1"],
-["9",  "",                   "",                            "", "", "0", "1"],
-["9",  "",                   "",                            "", "", "0", "1"],
-["3",  "09/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                    "", "", "123", "4"],
+["22",  "watch before Tue",  "Embedding Part II",            "https://web.microsoftstream.com/video/85b52444-fbe7-4f67-a7e2-b9083f2690a6", "https://docs.google.com/presentation/d/1uZM44OzxS3u0MjMnPLsp8kKUxtiBFGW1J2p84zxDQ_Y/edit?usp=sharing", "124", "1"],
+["23",  "watch before Tue",                   "Haskell at Facebook",                            "https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e?list=user&userId=11ae9db5-365e-4f65-9ce4-94bfea847835", "", "0", "0"],// TODO(Meng): upload video (josef)
+["3",  "09/12/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually",                    "", "", "126", "4"],  // TODO(James): upload Monad sheet
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
 ["9",  "",                   "",                            "", "", "0", "1"],
@@ -230,7 +232,7 @@ var files = [
 [  "66", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/FunctionRecipe.pdf", "Recipe for Writing Functions"],
 [  "67", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/copro.pdf", "How to Design \"Co\"-Programs"],
 [  "68", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/PreludeFunctionsCheatsheet.pdf", "Functions Cheatsheet"],
-[  "79", ".", ""], // it got upset i missed numbers
+[  "69", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/TypeClasses.pdf", "Type Classes"],
 [  "70", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/Monoids.pdf", "Monoids"],
 [  "71", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheetBonus2.pdf", "Bonus Sheet Two"],
 [  "72", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheetBonus2Dyslexic.pdf", "Bonus Sheet Two (Dyslexic Friendly)"],
@@ -284,12 +286,15 @@ var files = [
 [  "120", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/code08.hs", "Code Eight"],
 [  "121", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer08.pdf", "Sheet Eight - Example Solutions"],
 [  "122", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer08Dyslexic.pdf", "Sheet Eight - Example Solutions (Dyslexic Friendly)"],
-[  "123", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/MonadLawsChecker.hs", "MonadLawsChecker.hs"],
-[  "124", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet0.pdf", "Sheet Nine"],
-[  "125", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet09Dyslexic.pdf", "Sheet Nine (Dyslexic Friendly)"],
-[  "126", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/code09.hs", "Code Nine"],
-[  "127", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09.pdf", "Sheet Nine - Example Solutions"],
-[  "128", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09Dyslexic.pdf", "Sheet Nine - Example Solutions (Dyslexic Friendly)"],
+[  "123", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/EmbeddingPartI.hs", "EmbeddingPartI.hs"],
+[  "124", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/EmbeddingPartII.hs", "EmbeddingPartII.hs"],
+[  "125", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Monads.hs", "Monads.hs"],
+[  "126", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/MonadLawsChecker.hs", "MonadLawsChecker.hs"],
+[  "127", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet0.pdf", "Sheet Nine"],
+[  "128", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet09Dyslexic.pdf", "Sheet Nine (Dyslexic Friendly)"],
+[  "129", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/code09.hs", "Code Nine"],
+[  "130", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09.pdf", "Sheet Nine - Example Solutions"],
+[  "131", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/answer09Dyslexic.pdf", "Sheet Nine - Example Solutions (Dyslexic Friendly)"],
 
 
 
